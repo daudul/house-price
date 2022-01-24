@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" media="all" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+
+    <title>House Price Predict</title>
+  </head>
+  <body>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <div class="container">
+        <!-- Content here -->
+        <h1 class="text-center">
+            House Price Predict
+        </h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form action="/search" method="post">
+                    <div class="mb-3">
+                      <label for="area" class="form-label">Area</label>
+                      <input type="text" name="area" class="form-control required" id="area" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="room" class="form-label">Room</label>
+                      <input type="text" name="room" class="form-control" id="room" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                  </form>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+  </body>
+</html>

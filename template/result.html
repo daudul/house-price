@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" media="all" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+
+    <title>House Price Predict</title>
+  </head>
+  <body>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <div class="container">
+        <!-- Content here -->
+        <h1 class="text-center">
+            House Price Predict
+        </h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="alert alert-primary" role="alert">
+                    TK- {{ name }}
+                  </div>
+                  <a href="/" type="button" class="btn btn-primary">Back</a>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+  </body>
+</html>
